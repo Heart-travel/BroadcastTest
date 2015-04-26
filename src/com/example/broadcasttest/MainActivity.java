@@ -52,6 +52,14 @@ public class MainActivity extends Activity {
 		}
 	}
 	
+	public class BootCompleteReceiver extends BroadcastReceiver {
+		
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			Toast.makeText(context, "Boot Complete", Toast.LENGTH_LONG).show();
+		}
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
